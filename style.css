@@ -1,0 +1,84 @@
+/* Aero + Frutiger-inspired modern design */
+body {
+    font-family: "Frutiger", "Segoe UI", Tahoma, sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    width: 120px;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    gap: 2rem;
+}
+
+section {
+    background: rgba(255,255,255,0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 600px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    font-size: 0.9rem;
+}
+
+ul {
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.about-me p {
+    margin: 0.3rem 0;
+}
