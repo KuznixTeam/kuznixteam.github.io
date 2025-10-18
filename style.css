@@ -1,84 +1,132 @@
-/* Aero + Frutiger-inspired modern design */
+/* Frutiger Aero + Spline Sans + Mostly Blue + Dark Mode */
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600&display=swap');
+
+:root {
+  --blue-light: #2196f3;
+  --blue-dark: #0d47a1;
+  --bg-light: #e3f2fd;
+  --bg-dark: #121212;
+  --text-light: #1a1a1a;
+  --text-dark: #f1f1f1;
+  --card-bg-light: rgba(255,255,255,0.85);
+  --card-bg-dark: rgba(30,30,30,0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  section {
+    background: var(--card-bg-dark);
+  }
+  button {
+    background-color: var(--blue-dark);
+  }
+}
+
 body {
-    font-family: "Frutiger", "Segoe UI", Tahoma, sans-serif;
-    margin: 0;
-    background: linear-gradient(135deg, #e0f7fa, #e3f2fd);
-    color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: 'Spline Sans', sans-serif;
+  margin: 0;
+  background-color: var(--blue-light);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 header .logo {
-    width: 120px;
-    margin-bottom: 1rem;
+  width: 120px;
+  margin-bottom: 1rem;
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+nav.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+nav.social-links a {
+  text-decoration: none;
+  color: #fff;
+  background: var(--blue-dark);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+nav.social-links a:hover {
+  background: #1565c0;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 1rem;
-    gap: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
 }
 
 section {
-    background: rgba(255,255,255,0.85);
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    min-width: 280px;
-    max-width: 600px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background: var(--card-bg-light);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 280px;
+  max-width: 600px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 section:hover {
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 button {
-    margin-top: 1rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    background-color: #2196f3;
-    color: #fff;
-    cursor: not-allowed;
-    opacity: 0.6;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--blue-dark);
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.6;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: rgba(255,255,255,0.6);
-    backdrop-filter: blur(10px);
-    font-size: 0.9rem;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  font-size: 0.9rem;
 }
 
 ul {
-    text-align: left;
-    padding-left: 1.5rem;
+  text-align: left;
+  padding-left: 1.5rem;
 }
 
 .about-me p {
-    margin: 0.3rem 0;
+  margin: 0.3rem 0;
 }
